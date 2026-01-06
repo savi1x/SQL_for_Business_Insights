@@ -41,7 +41,7 @@ Vizualisation:
 
 ### 2. Customer Segmentation Analysis
 
-Query: [1_logistics_analysis.sql](/1_logistics_analysis.sql)
+Query: [2_customer_segmentation.sql](2_customer_segmentation.sql)
 
 - Ranked customers into quartiles based on their LTV 
 
@@ -51,7 +51,23 @@ Query: [1_logistics_analysis.sql](/1_logistics_analysis.sql)
 
 Vizualisation:
 
-![Logistics Analysis](/images/1_logistics_analysis.png)
+![Logistics Analysis](/images/2_customer_segmentation.png)
+
+📊 Key Findings:
+
+- High-Value Dominance: the top 25% of customers (High-Value) drive 62.7% of total revenue ($8.5M)
+
+- The "Mass Market" Core: the Mid-Value segment (50% of users) remains statistically significant, contributing 32.2% of revenue ($4.4M)
+
+- Low-Value Efficiency Gap: the bottom 25% of customers generate only 5.1% of revenue ($695k)
+
+💡 Business Insights:
+
+- High-Value: since losing just a fraction of these 23,855 VIPs would drastically hurt the bottom line, implement a "Velvet Rope" retention strategy (exclusive early access, dedicated support) to lock them in.
+
+- Mid-Value: this group is the primary growth lever. Launch Average Order Value (AOV) boosters—such as "Spend $50 more for free shipping" or product bundles—to migrate these users into the High-Value tier.
+
+- Low-Value: minimize ad spend on this segment. Shift to low-cost automated channels (email/push notifications) for re-engagement, as high-touch marketing here yields a negative ROI.
 
 ## Techical Details
 - Database

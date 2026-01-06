@@ -12,22 +12,8 @@ WITH customer_orders AS (
 cohort_data AS (
     SELECT customer_unique_id,
         TO_CHAR(first_purchase_date, 'YYYY-MM') AS cohort_month,
-        (
-            EXTRACT(
-                YEAR
-                FROM order_purchase_timestamp
-            ) - EXTRACT(
-                YEAR
-                FROM first_purchase_date
-            )
-        ) * 12 + (
-            EXTRACT(
-                MONTH
-                FROM order_purchase_timestamp
-            ) - EXTRACT(
-                MONTH
-                FROM first_purchase_date
-            )
+        (EXTRACT(YEAR FROM order_purchase_timestamp) - EXTRACT(YEAR FROM first_purchase_date)) * 12 + 
+        (EXTRACT(MONTH FROM order_purchase_timestamp) - EXTRACT(MONTH FROM first_purchase_date)
         ) AS month_lag
     FROM customer_orders
 ),

@@ -11,13 +11,13 @@ Analysis of supply chain logistics, customer satisfaction, and retention for a B
 
 ### 1. Logistics & Satisfaction Analysis
 
+Query: [1_logistics_analysis.sql](/1_logistics_analysis.sql)
+
 - Calculated delivery speed performance by comparing estimated deadlines against actual arrival dates
 
 - Correlated delivery delays with customer review scores
 
 - Grouped orders by delay severity (e.g., On Time vs. Late)
-
-Query: [1_logistics_analysis.sql](/1_logistics_analysis.sql)
 
 Vizualisation:
 
@@ -38,6 +38,20 @@ Vizualisation:
 - Retention Threshold: Trigger automated compensation (shipping refunds/credits) before Day 4, preventing the critical sentiment drop from 3.29 to 2.17.
 
 - Root Cause Audit: Investigate the specific carriers or routes responsible for the 3.4% of extreme delays, as this minority segment drives the majority of severe detractors.
+
+### 2. Customer Segmentation Analysis
+
+Query: [1_logistics_analysis.sql](/1_logistics_analysis.sql)
+
+- Ranked customers into quartiles based on their LTV 
+
+- Segmented the user base into High, Mid, and Low-value groups 
+
+- Calculated key metrics like total revenue
+
+Vizualisation:
+
+![Logistics Analysis](/images/1_logistics_analysis.png)
 
 ## Techical Details
 - Database
